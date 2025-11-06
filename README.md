@@ -1,4 +1,4 @@
-# AccomRater - Hệ thống đánh giá dịch vụ lưu trú thông minh
+# AccomRater - Hệ thống đánh giá dịch vụ lưu trú dựa trên ý kiến đánh giá
 
 Hệ thống hỗ trợ đánh giá chất lượng dịch vụ lưu trú dựa trên phương pháp khai thác ý kiến khách hàng đánh giá trực tuyến, sử dụng Graph Neural Networks (GNN).
 
@@ -44,10 +44,10 @@ Hệ thống hỗ trợ đánh giá chất lượng dịch vụ lưu trú dựa 
 ### 📥 Clone repository
 
 ```bash
-git clone https://github.com/saitamacode196/accomrater.git
+git clone https://github.com/tanmessi/accomrater.git
 cd accomrater
 ```
-
+### Version ban đầu chạy với dữ liệu tự thu thập
 ### ⚙️ Cấu hình môi trường
 
 1. Tạo file `.env` hoặc sử dụng file `.env.docker` có sẵn:
@@ -223,7 +223,8 @@ pip install -r requirements.txt
 
 4. Chạy ứng dụng:
 ```bash
-streamlit run app.py
+source venv2/Scripts/activate
+streamlit run app2.py
 ```
 
 ## Cấu trúc project
@@ -276,7 +277,7 @@ docker-compose restart crawler
 ```
 
 ## Các giai đoạn phát triển
-
+## Version 1 với dữ liệu tự thu thập
 Dự án AccomRater được phát triển qua 3 giai đoạn chính:
 
 ### Giai đoạn 1: Thu thập dữ liệu
@@ -320,6 +321,37 @@ Phát triển giao diện người dùng trực quan để demo các chức năn
 - **Streamlit UI**: Xây dựng giao diện tương tác với Streamlit
 - **Trực quan hóa đồ thị**: Hiển thị kết quả phân tích dưới dạng đồ thị
 - **Tích hợp mô hình**: Tích hợp các mô hình GNN đã huấn luyện vào giao diện
+
+## Version 2 với dữ liệu từ VLSP 2018
+Dự án AccomRater được phát triển qua 2 giai đoạn chính:
+
+### Giai đoạn 1: Xây dựng và phát triển mô hình GNN
+
+Xây dựng các mô hình Graph Neural Networks (GNNs) để phân tích sentiment và đánh giá chất lượng dịch vụ:
+
+- **GCN (Graph Convolutional Networks)**: Mô hình GNN cơ bản dựa trên tích chập đồ thị
+- **GAT (Graph Attention Networks)**: Mô hình GNN nâng cao sử dụng cơ chế attention
+- **SAGE
+
+Quá trình phát triển mô hình bao gồm:
+- Tiền xử lý dữ liệu và xây dựng đồ thị
+- Thiết kế và huấn luyện mô hình
+- Đánh giá hiệu suất và so sánh giữa các mô hình
+
+📚 **Tham khảo thêm**:
+- [PyTorch Geometric Documentation](https://pytorch-geometric.readthedocs.io/en/latest/)
+- [GCN - Paper gốc](https://arxiv.org/abs/1609.02907) (Semi-Supervised Classification with Graph Convolutional Networks)
+- [GAT - Paper gốc](https://arxiv.org/abs/1710.10903) (Graph Attention Networks)
+- [DGL - Deep Graph Library](https://www.dgl.ai/): Thư viện xây dựng và huấn luyện GNN
+
+### Giai đoạn 3: Xây dựng UI Demo
+
+Phát triển giao diện người dùng trực quan để demo các chức năng của hệ thống:
+
+- **Streamlit UI**: Xây dựng giao diện tương tác với Streamlit
+- **Trực quan hóa đồ thị**: Hiển thị kết quả phân tích dưới dạng đồ thị
+- **Tích hợp mô hình**: Tích hợp các mô hình GNN đã huấn luyện vào giao diện
+
 
 📚 **Tham khảo thêm**:
 - [Streamlit Documentation](https://docs.streamlit.io/)

@@ -1,0 +1,761 @@
+phòng:
+  positive:
+  - rộng
+  - sạch
+  - đẹp
+  - thoải_mái
+  - sạch_sẽ
+  - tiện_nghi
+  - đầy_đủ
+  - rộng_rãi
+  - thoáng_mát
+  - yên_tĩnh
+  - thoáng
+  - view_đẹp
+  - sang_trọng
+  - mới
+  - ok
+  - sáng_sủa
+  - thoải_mái
+  - hiện_đại
+
+  negative:
+  - hẹp
+  - bẩn
+  - nóng
+  - hướng_nắng
+  - chật
+  - cũ_kỹ
+  - ồn_ào
+  - chật_chội
+  - bụi
+  - thiếu_tiện_nghi
+  - xuống_cấp
+  - hỏng
+  - kém
+  - tối
+  - ẩm_mốc
+  - dột_nát
+
+nhân_viên:
+  positive:
+  - thân_thiện
+  - nhiệt_tình
+  - niềm_nở
+  - chu_đáo
+  - lịch_sự
+  - vui_vẻ
+  - chuyên_nghiệp
+  - tận_tâm
+  - giúp_đỡ
+  - tốt
+  - dễ_thương
+  - ok
+  - nhanh_nhẹn
+  - thông_minh
+  - sáng_tạo
+  negative:
+  - bất_lịch_sự
+  - thờ_ơ
+  - không_nhiệt_tình
+  - lạnh_nhạt
+  - thiếu_chuyên_nghiệp
+  - kém
+  - không_thân_thiện
+  - cẩu_thả
+  - khó_chịu
+  - phục_vụ_kém
+  - giữ_tiền_cọc
+  - khinh_thường
+  - không_chịu
+  - vô_trách_nhiệm
+  - chậm_chạp
+  - hung_hăng
+dịch_vụ:
+  positive:
+  - nhiệt_tình
+  - chu_đáo
+  - nhanh_nhẹn
+  - chuyên_nghiệp
+  - tốt
+  - tận_tâm
+  - tiện_lợi
+  - nhanh
+  - chất_lượng
+  - hoàn_hảo
+  - ok
+  - chiều_khách
+  - dễ_chịu
+  - sáng_tạo
+  - linh_hoạt
+  - tận_tình
+  negative:
+  - chậm_chạp
+  - không_chuyên_nghiệp
+  - lơ_là
+  - tệ
+  - chậm
+  - kém
+  - thất_vọng
+  - thiếu_chuyên_nghiệp
+  - cẩu_thả
+  - kém_chất_lượng
+  - cách_âm
+  - hạn_chế
+  - vô_tâm
+  - khó_khăn
+  - rườm_rà
+vị_trí:
+  positive:
+  - trung_tâm
+  - thuận_tiện
+  - view_sông
+  - gần
+  - đẹp
+  - tốt
+  - yên_tĩnh
+  - gần_biển
+  - dễ_tìm
+  - dễ_đi_lại
+  - thuận_lợi
+  - ok
+  - an_toàn
+  - phong_cảnh
+  - thoáng
+  - rộng
+  - ngay_khu_trung_tâm
+  negative:
+  - xa
+  - khó_tìm
+  - không_thuận_tiện
+  - ồn_ào
+  - kém
+  - xa_xôi
+  - xa_trung_tâm
+  - khó_đi_lại
+  - bất_tiện
+  - khu_phức_tạp
+  - nguy_hiểm
+  - tắc_đường
+  - xa_chợ
+  - xa_sân_bay
+  - hẻo_lánh
+cơ_sở_vật_chất:
+  positive:
+  - chỗ_đậu_xe_rộng_rãi
+  - có_netflix_xem_phim
+  - có_gương_selfie
+  - hiện_đại
+  - hiện_đại
+  - mới
+  - sang_trọng
+  - sang_trọng
+  - sạch
+  - tiện_nghi
+  - tiện_nghi
+  - trang_bị_cơ_vật_chất_ấn_tượng
+  - trang_bị_tốt
+  - đầy_đủ_tiện_nghi
+  - đầy_đủ
+  negative:
+  - cách_âm_hơi_kém
+  - cũ
+  - cơ_sở_vật_chất_kém
+  - hư_hỏng
+  - không_đầy_đủ
+  - thiết_bị_cũ
+  - trần_nhà_hư
+  - tường_mốc
+  - xuống_cấp
+f&b:
+  positive:
+  - chu_đáo
+  - chuẩn_vị
+  - chú_ý_chi_tiết
+  - hỏi_thăm_gia_đình
+  - hợp_lý
+  - miễn_phí
+  - ngon
+  - nóng_sốt
+  - phong_phú
+  - tươm_tất
+  - tặng_bánh_sinh_nhật
+  - tặng_quà_sinh_nhật
+  - đa_dạng
+  - đặc_sản
+  - đủ
+  negative:
+  - chán
+  - chất_lượng_kém
+  - không_ngon
+  - không_phong_phú
+  - nghèo_nàn
+  - ít_món
+  - đơn_điệu
+tổng_thể:
+  positive:
+  - hài_lòng
+  - hài_lòng
+  - ok
+  - rất_tốt
+  - sảng_khoái
+  - tuyệt_hảo
+  - tuyệt_vời
+  - tuyệt_hảo
+  - tuyệt_vời
+  - tốt
+  - xuất_sắc
+  - xuất_sắc
+  - đáng_tiền
+  - đáng_trải_nghiệm
+  negative:
+  - chưa_đạt_tiêu_chuẩn
+  - không_hài_lòng
+  - kém
+  - thất_vọng
+  - trung_bình
+  - tạm_ổn
+bữa_sáng:
+  positive:
+  - bàn_tiệc
+  - ngon
+  negative:
+  - ít_món
+giá_cả:
+  positive:
+  - hợp_lý
+  - tốt
+  - rẻ
+  - phải_chăng
+  - vừa_phải
+  - xứng_đáng
+  - hợp_túi_tiền
+  - tiết_kiệm
+  - giá_tốt
+  - đáng_đồng_tiền
+  - ok
+  - cạnh_tranh
+  - ưu_đãi
+  - giảm_giá
+  negative:
+  - đắt
+  - cao
+  - quá_đắt
+  - không_xứng_đáng
+  - mắc
+  - đắt_đỏ
+  - không_hợp_lý
+  - quá_cao
+  - không_đáng_đồng_tiền
+  - rẻ_mà_kém
+  - chênh_lệch
+  - lừa_đảo
+  - gian_lận
+an_ninh:
+  positive:
+  - an_toàn
+  - chuyên_nghiệp
+  - thân_thiện
+  - 24/7
+  - ok
+  - giám_sát_tốt
+  - nhiệt_tình
+  - nhanh_nhẹn
+  - đáng_tin
+  - có_camera
+  negative:
+  - nguy_hiểm
+  - kém
+  - chậm_chạp
+  - không_chuyên
+  - vô_trách_nhiệm
+  - không_an_toàn
+  - thiếu_camera
+  - không_tin_được
+  - thờ_ơ
+  - hung_hăng
+internet:
+  positive: []
+  negative:
+  - chậm
+  - không_kết_nối
+  - không_ổn_định
+  - yếu
+không_gian:
+  positive:
+  - rộng_mở
+  - rộng_rãi
+  - thoáng
+  - yên_tĩnh
+  negative:
+  - bí_bức
+  - chật_chội
+  - ồn_ào
+trải_nghiệm_chung:
+  positive:
+  - chuyên_nghiệp
+  - thoải_mái
+  - thuận_tiện
+  - thú_vị
+  negative:
+  - bất_tiện
+  - khó_chịu
+  - không_như_mong_đợi
+tiện_ích_bổ_sung:
+  positive:
+  - chỗ_đỗ_xe
+  - hồ_bơi
+  - phòng_gym
+  negative:
+  - hồ_bơi_nhỏ
+  - thiếu_chỗ_đậu_xe
+kỳ_nghỉ:
+  positive:
+  - tuyệt_vời
+  negative: []
+khách_sạn:
+  positive:
+  - xây_đẹp
+  - sang_trọng
+  - sạch
+  - sạch_sẽ
+  - tiêu_chuẩn_cao_cấp
+  - tuyệ_vời
+  - tuyệt_vời
+  - tốt
+  - xứng_5
+  - đẳng_cấp_5
+  - đẹp
+  - bãi_đỗ_xe 
+  - có_mái_che
+  negative: []
+cơ_vật_chất:
+  positive:
+  - trang_bị_ấn_tượng
+  negative: []
+phục_vụ:
+  positive:
+  - sự_hiếu_khách
+  negative: []
+quản_lý:
+  positive:
+  - cử_nhân_viên_tặng_bánh
+  - hỏi_thăm_gia_đình
+  negative: []
+
+cảnh_quan:
+  positive:
+  - đẹp
+  - xanh
+  - rộng
+  - sạch
+  - yên_tĩnh
+  - ok
+  - chăm_sóc_tốt
+  - thiết_kế_đẹp
+  - nhiều_cây
+  - view_tuyệt_vời
+  negative:
+  - xấu
+  - bẩn
+  - hẹp
+  - không_chăm_sóc
+  - khô_héo
+  - kém
+  - ít_cây
+  - không_gian_chật
+  - mất_vệ_sinh
+  - không_an_toàn
+ăn_sáng:
+  positive:
+  - kha_nhieu_thuc_an
+  - ngon_miệng
+  - phong_phú
+  - đa_dạng
+  negative:
+  - hơi_ít_và_không_phong_phú
+  - hơi_ít_món
+  - ngán
+hồ_bơi:
+  positive:
+  - sạch
+  - rộng
+  - đẹp
+  - sâu
+  - ấm
+  - an_toàn
+  - view_đẹp
+  - có_quầy_bar
+  - mát_mẻ
+  - ok
+  - nhiều_chỗ_ngồi
+  - đầy_đủ_tiện_nghi
+  negative:
+  - bẩn
+  - hẹp
+  - lạnh
+  - sâu
+  - nguy_hiểm
+  - không_có_cứu_hộ
+  - tối
+  - xa_phòng
+  - kém_chất_lượng
+  - không_có_ghế_dài
+giá:
+  positive:
+  - giá_giảm
+  - hợp_lý
+  - rất_tốt
+  negative: []
+check_in:
+  positive: []
+  negative:
+  - hoi_mat_thoi_gian
+  - hơi_lâu
+đồ_ăn:
+  positive:
+  - ngon
+  - tươi
+  - đa_dạng
+  - chất_lượng
+  - phong_phú
+  - thơm_ngon
+  - tươi_ngon
+  - nhiều
+  - đầy_đủ
+  - hấp_dẫn
+  - ok
+  - chiều_khách
+  - dễ_chịu
+  - sạch_sẽ
+  - đẹp
+  - bổ_dưỡng
+  negative:
+  - dở
+  - nhạt
+  - ít
+  - không_ngon
+  - kém
+  - thiếu
+  - nguội
+  - đạm_bạc
+  - nghèo_nàn
+  - cũ
+  - không_đa_dạng
+  - hạn_chế
+  - bẩn
+  - khôn_chín
+  - mốc
+bãi_đỗ_xe:
+  positive:
+  - rộng
+  - sạch
+  - an_toàn
+  - miễn_phí
+  - dễ_dàng
+  - thuận_tiện
+  - có_mái_che
+  - đầy_đủ
+  - gần_cửa
+  - ok
+  - rộng_rãi
+  - giám_sát
+  negative:
+  - chật
+  - xa
+  - mất_phí
+  - nguy_hiểm
+  - hẹp
+  - bẩn
+  - không_an_toàn
+  - khó_tìm
+  - xa_khách_sạn
+  - thiếu_chỗ
+  - ồn_ào
+  - trộm_cắp
+wifi:
+  positive:
+  - nhanh
+  - ổn_định
+  - miễn_phí
+  - mạnh
+  - khắp_phòng
+  - dễ_kết_nối
+  - ok
+  - chất_lượng
+  - tốc_độ_cao
+  - không_giật
+  - liên_tục
+  negative:
+  - chậm
+  - yếu
+  - mất_kết_nối
+  - không_ổn_định
+  - kém
+  - xa
+  - giật
+  - mất_phí
+  - khó_kết_nối
+  - không_phủ_sóng
+spa:
+  positive:
+  - chuyên_nghiệp
+  - sạch_sẽ
+  - thư_giãn
+  - nhiệt_tình
+  - đa_dạng_dịch_vụ
+  - thoải_mái
+  - ok
+  - chất_lượng
+  - hiện_đại
+  - nhân_viên_tốt
+  - không_gian_đẹp
+  negative:
+  - kém
+  - bẩn
+  - nhân_viên_không_chuyên
+  - đắt
+  - ít_dịch_vụ
+  - chật
+  - không_thoải_mái
+  - mùi_khó_chịu
+  - không_hiện_đại
+  - chậm
+phòng_tập:
+  positive:
+  - đầy_đủ_thiết_bị
+  - sạch
+  - rộng
+  - hiện_đại
+  - ok
+  - nhiều_máy_móc
+  - thoáng
+  - an_toàn
+  - chất_lượng
+  - dụng_cụ_mới
+  negative:
+  - chật
+  - thiếu_thiết_bị
+  - cũ
+  - bẩn
+  - kém
+  - không_an_toàn
+  - máy_móc_hỏng
+  - ít_không_gian
+  - nóng
+  - mùi_khó_chịu
+không_gian_chung:
+  positive:
+  - rộng
+  - sạch
+  - đẹp
+  - thoáng
+  - sang_trọng
+  - yên_tĩnh
+  - ok
+  - tiện_nghi
+  - nhiều_chỗ_ngồi
+  - view_đẹp
+  - thiết_kế_đẹp
+  negative:
+  - chật
+  - bẩn
+  - cũ
+  - ồn_ào
+  - kém
+  - tối
+  - không_gian_hẹp
+  - thiếu_ghế_ngồi
+  - mùi_khó_chịu
+  - không_thoải_mái
+nhà_vệ_sinh:
+  positive:
+  - sạch
+  - rộng
+  - mới
+  - đầy_đủ_tiện_nghi
+  - ok
+  - nước_nóng
+  - sáng_sủa
+  - hương_thơm
+  - không_mùi
+  - sang_trọng
+  negative:
+  - bẩn
+  - hẹp
+  - cũ
+  - mùi_khó_chịu
+  - không_có_nước_nóng
+  - kém
+  - ẩm_mốc
+  - thiếu_tiện_nghi
+  - tối
+  - dột
+điều_hòa:
+  positive:
+  - mát
+  - êm
+  - nhanh
+  - ok
+  - điều_chỉnh_được
+  - hiệu_quả
+  - tiết_kiệm_điện
+  - không_ồn
+  - sạch
+  - đầy_đủ
+  negative:
+  - nóng
+  - ồn
+  - kém
+  - chậm
+  - hỏng
+  - không_mát
+  - không_điều_chỉnh_được
+  - bẩn
+  - mùi_khó_chịu
+  - chảy_nước
+đưa_đón:
+  positive:
+  - đúng_giờ
+  - thân_thiện
+  - sạch
+  - rộng
+  - ok
+  - chuyên_nghiệp
+  - an_toàn
+  - miễn_phí
+  - nhiệt_tình
+  - thuận_tiện
+  negative:
+  - chậm
+  - kém
+  - không_đúng_giờ
+  - không_an_toàn
+  - bẩn
+  - hẹp
+  - thiếu_chuyên_nghiệp
+  - mất_phí
+  - khó_tìm
+  - vô_trách_nhiệm
+quầy_bar:
+  positive:
+  - đa_dạng
+  - ngon
+  - nhiều_lựa_chọn
+  - ok
+  - không_gian_đẹp
+  - phục_vụ_tốt
+  - view_đẹp
+  - thoáng
+  - sạch
+  - chuyên_nghiệp
+  negative:
+  - ít_lựa_chọn
+  - kém
+  - mắc
+  - phục_vụ_không_tốt
+  - bẩn
+  - chật
+  - không_khí_nặng_nề
+  - ồn_ào
+  - không_gian_hẹp
+  - mùi_khó_chịu
+nhà_hàng:
+  positive:
+  - ngon
+  - đa_dạng
+  - sạch
+  - ok
+  - chuyên_nghiệp
+  - không_gian_đẹp
+  - view_đẹp
+  - nhiều_lựa_chọn
+  - phục_vụ_tốt
+  - không_gian_thoáng
+  - đầy_đủ
+  - tươi
+  - chất_lượng
+  - giá_hợp_lý
+  negative:
+  - kém
+  - bẩn
+  - ít_lựa_chọn
+  - phục_vụ_không_tốt
+  - chật
+  - mùi_khó_chịu
+  - ồn_ào
+  - nguội
+  - không_sạch
+  - mất_vệ_sinh
+  - giá_cao
+  - nhạt
+  - không_ngon
+  - chậm
+buổi_sáng:
+  positive:
+  - ngon
+  - đa_dạng
+  - nóng
+  - tươi
+  - sạch
+  - nhiều_lựa_chọn
+  - chất_lượng
+  - phong_phú
+  - ok
+  - nhanh
+  negative:
+  - nguội
+  - ít
+  - không_ngon
+  - bẩn
+  - hạn_chế
+  - nhàm_chán
+  - kém
+  - không_sạch
+  - mất_vệ_sinh
+dịch_vụ_phòng:
+  positive:
+  - nhanh
+  - chuyên_nghiệp
+  - chu_đáo
+  - ok
+  - sạch_sẽ
+  - nhiệt_tình
+  - đầy_đủ
+  - tận_tâm
+  - chất_lượng
+  - tiện_lợi
+  negative:
+  - chậm
+  - kém
+  - vô_tâm
+  - không_chuyên
+  - bẩn
+  - thiếu
+  - khó_khăn
+  - không_nhiệt_tình
+  - lơ_là
+  - vô_trách_nhiệm
+xe_đưa_đón:
+  positive:
+  - đúng_giờ
+  - sạch
+  - an_toàn
+  - thoải_mái
+  - rộng
+  - thân_thiện
+  - ok
+  - chuyên_nghiệp
+  - miễn_phí
+  - nhiệt_tình
+  negative:
+  - chậm
+  - không_đúng_giờ
+  - bẩn
+  - chật
+  - nguy_hiểm
+  - kém
+  - vô_trách_nhiệm
+  - không_an_toàn
+  - thiếu_chuyên_nghiệp
+  - mất_phí

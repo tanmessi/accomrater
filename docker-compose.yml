@@ -1,0 +1,103 @@
+
+services:
+  anpibot:
+    image: anpibot
+    container_name: anpibot-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+      - "8443:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80;https://+:443
+      - MicrosoftAppId=${MICROSOFT_APP_ID:-}
+      - MicrosoftAppPassword=${MICROSOFT_APP_PASSWORD:-}
+      - ApiBaseUrl=${API_BASE_URL:-https://api2.fjpservice.net}
+      - AzureStorageConnectionString=${AZURE_STORAGE_CONNECTION_STRING:-DefaultEndpointsProtocol=https;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://azurite:10000/devstoreaccount1;}
+      - CosmosDbConnectionString=${COSMOS_DB_CONNECTION_STRING:-AccountEndpoint=https://localhost:8081/;AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==;DatabaseName=AnpiDb}
+      - JwtSettings__SecretKey=${JWT_SECRET:-development_only_secret_key_minimum_32chars_long}
+      - JwtSettings__Issuer=${JWT_ISSUER:-AnpiBot}
+      - JwtSettings__Audience=${JWT_AUDIENCE:-AnpiClient}
+      - JwtSettings__ExpiryInMinutes=${JWT_EXPIRY_MINUTES:-60}
+      - KeyVaultName="" # Explicitly set to empty to disable Key Vault
+      - DOTNET_RUNNING_IN_CONTAINER=true
+    restart: unless-stopped
+    networks:
+      - anpibot-network
+    volumes:
+      # Optional: Mount app settings for easier configuration
+      - ./appsettings.json:/app/appsettings.json:ro
+      - ./appsettings.Development.json:/app/appsettings.Development.json:ro
+    depends_on:
+      - azurite
+      - cosmos-db-emulator
+
+  nginx:
+    image: nginx:latest
+    container_name: anpibot-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+      - ./wwwroot:/usr/share/nginx/html
+    depends_on:
+      - anpibot
+    networks:
+      - anpibot-network
+    restart: unless-stopped
+
+  # Azure Storage Emulator (Azurite)
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    container_name: azurite
+    ports:
+      - "10000:10000" # Blob
+      - "10001:10001" # Queue
+      - "10002:10002" # Table
+    volumes:
+      - azurite-data:/data
+    networks:
+      - anpibot-network
+    restart: unless-stopped
+
+  # Cosmos DB Emulator
+  cosmos-db-emulator:
+    image: mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator:latest
+    container_name: cosmos-db-emulator
+    environment:
+      - AZURE_COSMOS_EMULATOR_PARTITION_COUNT=10
+      - AZURE_COSMOS_EMULATOR_ENABLE_DATA_PERSISTENCE=true
+    ports:
+      - "8081:8081"
+      - "10251:10251"
+      - "10252:10252"
+      - "10253:10253"
+      - "10254:10254"
+    volumes:
+      - cosmos-data:/data/db
+    networks:
+      - anpibot-network
+    restart: unless-stopped
+
+  streamlit-app:
+    build: .
+    container_name: streamlit-sentiment-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/app
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+
+networks:
+  anpibot-network:
+    driver: bridge
+
+volumes:
+  azurite-data:
+  cosmos-data:

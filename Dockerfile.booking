@@ -1,0 +1,41 @@
+FROM python:3.10-slim
+
+# 📦 Cài đặt Google Chrome
+RUN apt-get update && apt-get install -y wget gnupg curl unzip \
+    && wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
+    && echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list \
+    && apt-get update \
+    && apt-get install -y google-chrome-stable \
+    && rm -rf /var/lib/apt/lists/*
+
+# 📥 Download chromedriver từ URL mới
+RUN mkdir -p /app/drivers \
+    && wget -q "https://storage.googleapis.com/chrome-for-testing-public/133.0.6943.141/linux64/chromedriver-linux64.zip" -O /app/drivers/chromedriver.zip \
+    && unzip -o /app/drivers/chromedriver.zip -d /app/drivers/ \
+    && mv /app/drivers/chromedriver-linux64/chromedriver /usr/local/bin/ \
+    && chmod +x /usr/local/bin/chromedriver \
+    && rm -rf /app/drivers/chromedriver-linux64 /app/drivers/chromedriver.zip
+
+# 📂 Thiết lập thư mục làm việc
+WORKDIR /app
+
+# 📄 Copy và cài đặt requirements
+COPY requirements.txt .
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 📂 Copy code
+COPY . .
+
+# 🔧 Biến môi trường
+ENV PYTHONUNBUFFERED=1
+ENV HEADLESS_MODE=true
+ENV TMP_DIR=/tmp/chrome_data
+ENV SELENIUM_HUB_URL=http://selenium-hub:4444/wd/hub
+
+# 🚪 Port cho VNC (nếu cần)
+EXPOSE 5901
+
+# 🚀 Khởi chạy]
+CMD ["python", "run_booking_crawler.py"]
+RUN if [ "$DEBUG_MODE" = "true" ] ; then pip install debugpy ; fi

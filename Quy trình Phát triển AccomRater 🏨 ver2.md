@@ -12,7 +12,8 @@
 8. [Triển khai ứng dụng](#triển-khai-ứng-dụng)
 
 ## 🎯 Tổng quan dự án
-
+### Khởi chạy mô hình huấn luyện và đánh giá
+chạy file mohinh_gnns.ipynb
 AccomRater: Hệ thống phân tích và gợi ý cải thiện dịch vụ lưu trú.
 
 ✅ Mục tiêu:

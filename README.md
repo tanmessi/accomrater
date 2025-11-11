@@ -279,6 +279,8 @@ docker-compose logs postgres
 ```bash
 docker-compose restart crawler
 ```
+### Khởi chạy mô hình huấn luyện và đánh giá
+chạy file mohinh_gnns.ipynb
 
 ## Các giai đoạn phát triển
 ## Version 1 với dữ liệu tự thu thập

@@ -1,4 +1,4 @@
-# AccomRater - Hệ thống đánh giá dịch vụ lưu trú dựa trên ý kiến đánh giá
+# AccomRater - Hệ thống đánh giá dịch vụ lưu trú thông minh
 
 Hệ thống hỗ trợ đánh giá chất lượng dịch vụ lưu trú dựa trên phương pháp khai thác ý kiến khách hàng đánh giá trực tuyến, sử dụng Graph Neural Networks (GNN).
 
@@ -22,12 +22,16 @@ Hệ thống hỗ trợ đánh giá chất lượng dịch vụ lưu trú dựa 
 - [Tác giả](#tác-giả)
 
 ## Chức năng chính
-
+version ban đầu
 - Thu thập đánh giá từ Booking.com và Agoda.com
 - Phân tích sentiment từ bình luận khách hàng
 - Đánh giá chất lượng dịch vụ dựa trên GNN
 - Gợi ý dịch vụ phù hợp cho khách hàng
-
+version cuối cùng
+- Sử dụng dữ liệu từ VLSP 2018
+- Phân tích sentiment từ bình luận khách hàng
+- Đánh giá chất lượng dịch vụ dựa trên GNN
+- Gợi ý dịch vụ phù hợp cho khách hàng
 ## Yêu cầu hệ thống
 
 - Docker & Docker Compose
@@ -222,8 +226,8 @@ pip install -r requirements.txt
 3. Chuẩn bị database PostgreSQL và cập nhật file `.env`
 
 4. Chạy ứng dụng:
+Khởi chạy môi trường: source venv2/scripts/activate
 ```bash
-source venv2/Scripts/activate
 streamlit run app2.py
 ```
 
